@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品行銷網站</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS Animation CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 導航欄 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">LOGO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">商品</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">特色</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">聯絡我們</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首頁區塊 -->
+    <section id="home" class="hero-section">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-md-6" data-aos="fade-right">
+                    <h1>歡迎來到我們的商店</h1>
+                    <p class="lead">發現最優質的商品，享受最佳的購物體驗</p>
+                    <a href="#products" class="btn btn-primary btn-lg">立即選購</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 商品區塊 -->
+    <section id="products" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">熱門商品</h2>
+            <div class="row">
+                <!-- 商品卡片 1 -->
+                <div class="col-md-4 mb-4" data-aos="fade-up">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="商品1">
+                        <div class="card-body">
+                            <h5 class="card-title">商品名稱 1</h5>
+                            <p class="card-text">商品描述內容</p>
+                            <p class="card-text"><strong>NT$ 1,000</strong></p>
+                            <button class="btn btn-primary">加入購物車</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 商品卡片 2 -->
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="商品2">
+                        <div class="card-body">
+                            <h5 class="card-title">商品名稱 2</h5>
+                            <p class="card-text">商品描述內容</p>
+                            <p class="card-text"><strong>NT$ 1,200</strong></p>
+                            <button class="btn btn-primary">加入購物車</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 商品卡片 3 -->
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="商品3">
+                        <div class="card-body">
+                            <h5 class="card-title">商品名稱 3</h5>
+                            <p class="card-text">商品描述內容</p>
+                            <p class="card-text"><strong>NT$ 1,500</strong></p>
+                            <button class="btn btn-primary">加入購物車</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 特色區塊 -->
+    <section id="features" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">我們的特色</h2>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4" data-aos="fade-up">
+                    <i class="fas fa-shipping-fast fa-3x mb-3"></i>
+                    <h4>快速配送</h4>
+                    <p>24小時內完成出貨</p>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-undo fa-3x mb-3"></i>
+                    <h4>7天鑑賞期</h4>
+                    <p>無條件退換貨</p>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-headset fa-3x mb-3"></i>
+                    <h4>專業客服</h4>
+                    <p>提供最優質的服務</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 聯絡我們區塊 -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">聯絡我們</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6" data-aos="fade-up">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="您的大名">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="電子郵件">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="請輸入您的訊息"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">送出訊息</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2025 商品行銷網站. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

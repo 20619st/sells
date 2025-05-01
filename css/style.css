@@ -1,0 +1,73 @@
+/* 全域設定 */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+}
+
+/* 導航欄樣式 */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Hero 區塊樣式 */
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://via.placeholder.com/1920x1080');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding-top: 80px;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+/* 商品卡片樣式 */
+.card {
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* 特色區塊樣式 */
+#features i {
+    color: var(--primary-color);
+}
+
+/* 聯絡表單樣式 */
+.form-control {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,0.25);
+}
+
+/* 響應式調整 */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-section {
+        text-align: center;
+        padding: 60px 20px;
+    }
+}
+
+/* 動畫持續時間設定 */
+[data-aos] {
+    transition-duration: 800ms !important;
+}
